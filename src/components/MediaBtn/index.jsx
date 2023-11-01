@@ -20,7 +20,6 @@ const MediaBtn = () => {
   return (
     <div className={styles.mediaContainer}>
       {isOpen ? <Heading /> : <MediaHandler />}
-      {/* <MediaHandler /> */}
       <div className={styles.hero}>
         <button
           className={isActive ? styles.btn : styles.btnActive}
