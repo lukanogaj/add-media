@@ -1,0 +1,39 @@
+.mediaHandler {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 80px;
+  background-color: #fff;
+
+  // background-color: red;
+  border-radius: 40px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: #fff;
+  // border-radius: 50%;
+  color: red;
+  overflow: hidden;
+
+  .icons:hover {
+    background-color: red;
+    transform: translateY(-10px);
+  }
+
+  svg {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.icons:hover {
+  // background-color: red;
+  transform: translateY(-6px);
+  overflow: hidden;
+  transition: 0.8s;
+}

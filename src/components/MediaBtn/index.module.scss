@@ -1,10 +1,13 @@
-// @diameter: 4em;
-// @radius: @diameter / 2;
-// @border-color: #c2c7cc;
-// @border-color-hover: #f26a3d;
-// @colse-color: #8a9199;
+.mediaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .hero {
+  // position: fixed;
+  // top: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +15,7 @@
   height: 100px;
   background-color: #8a2be2;
   border-radius: 50%;
+  margin-top: 10px;
   // transform: rotate(-90deg);
 
   .btn {
@@ -23,8 +27,6 @@
     border-radius: 50%;
     background-color: #8a2be2;
     border: none;
-    // border: 1px solid #c2c7cc;
-    // color: transparent;
 
     cursor: pointer;
     transition: all ease 0.3s;
@@ -36,19 +38,14 @@
       height: 5px;
       margin-left: 5px;
       border-radius: 5px;
-      // left: 140px;
-      // right: 140px;
-      // left: 48%;
-      // top: 63%;
-      // margin-left: 2em / 2;
 
       content: '';
       background: #fff;
-      // transition: all ease 1s;
+      transition: all ease 1s;
     }
 
     &:before {
-      -webkit-transform: rotate(45deg);
+      -webkit-transform: rotate(30deg);
       transform: rotate(89deg);
     }
 
@@ -57,21 +54,55 @@
     //   transform: rotate(-0deg);
     // }
 
-    &:hover,
-    &:focus {
-      -webkit-transform: rotate(-180deg);
-      transform: rotate(-80deg);
-      border-color: #f26a3d;
-      background: fade(#f26a3d, 10%);
-
-      // &:before,
-      // &:after {
-      //   background: red;
-      // }
-    }
+    // &:hover,
+    // :focus {
+    //   -webkit-transform: rotate(-180deg);
+    //   transform: rotate(-80deg);
+    //   border-color: #f26a3d;
+    //   background: fade(#f26a3d, 10%);
+    // }
   }
 }
 
-// .btn {
-//   background-color: red;
-// }
+.btnActive {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+  background-color: #8a2be2;
+  border: none;
+
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  &:before,
+  &:after {
+    position: absolute;
+    width: 3em;
+    height: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    content: '';
+    background: #fff;
+    transition: all ease 1s;
+  }
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-45deg);
+  border-color: #f26a3d;
+  background: fade(#f26a3d, 10%);
+
+  &:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(89deg);
+  }
+
+  // &:hover {
+  //   -webkit-transform: rotate(-180deg);
+  //   transform: rotate(-80deg);
+  //   border-color: #f26a3d;
+  //   background: fade(#f26a3d, 10%);
+  // }
+}
