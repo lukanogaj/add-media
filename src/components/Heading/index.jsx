@@ -1,8 +1,8 @@
-// import styles from './index.module.scss';
+import styles from './index.module.scss';
 
 const Heading = () => {
   return (
-    <div>
+    <div className={styles.heading}>
       <h2>Add media </h2>
     </div>
   );

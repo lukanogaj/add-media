@@ -1,4 +1,17 @@
-h2 {
-  font-size: 3rem;
-  color: #fff;
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 400px;
+  height: 80px;
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
 }
+
+// h2 {
+//   font-size: 3rem;
+//   color: #fff;
+// }
