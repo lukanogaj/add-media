@@ -6,27 +6,19 @@ import Heading from '../Heading';
 
 const MediaBtn = () => {
   const [isActive, setActive] = useState('false');
-  const [isOpen, setOpen] = useState('false');
+  // const [isOpen, setOpen] = useState('false');
 
   const handleBtn = () => {
     setActive(!isActive);
   };
 
-  const showMedia = () => {
-    setOpen(!isOpen);
-    console.log('Hello');
-  };
-
   return (
     <div className={styles.mediaContainer}>
-      {isOpen ? <Heading /> : <MediaHandler />}
+      {isActive ? <Heading /> : <MediaHandler />}
       <div className={styles.hero}>
         <button
           className={isActive ? styles.btn : styles.btnActive}
-          onClick={() => {
-            handleBtn();
-            showMedia();
-          }}
+          onClick={handleBtn}
         ></button>
       </div>
     </div>
