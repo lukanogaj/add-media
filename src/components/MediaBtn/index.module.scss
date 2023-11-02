@@ -1,3 +1,25 @@
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: ($size - $thickness) / 2;
+    left: 0;
+    right: 0;
+    height: $thickness;
+    background: $color;
+    border-radius: $thickness;
+  }
+}
+
 .mediaContainer {
   display: flex;
   justify-content: center;
@@ -20,27 +42,28 @@
   .btn {
     display: flex;
     align-items: center;
+    position: relative;
     width: 65%;
     height: 65%;
     border-radius: 50%;
     background-color: #8a2be2;
     border: none;
+    transition: all ease 8s;
 
     cursor: pointer;
-    transition: all ease 0.3s;
+    transition: all ease 0.7s;
 
     &::before,
     &::after {
-      display: block;
       position: absolute;
-      width: 3em;
+      width: 40px;
       height: 5px;
       margin-left: 5px;
       border-radius: 5px;
 
       content: '';
       background: #fff;
-      transition: all ease 1s;
+      transition: all ease 0.6s;
     }
 
     &:before {
@@ -58,9 +81,10 @@
   border-radius: 50%;
   background-color: #8a2be2;
   border: none;
+  transition: all ease 1s;
 
   cursor: pointer;
-  transition: all ease 0.3s;
+  transition: all ease 0.6s;
 
   &:before,
   &:after {
@@ -68,8 +92,8 @@
     width: 3em;
     height: 5px;
     margin-left: 5px;
-    // margin: auto;
-    border-radius: 5px;
+    border: none;
+    // border-radius: 5px;
 
     content: '';
     background: #fff;
