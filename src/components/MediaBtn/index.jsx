@@ -12,17 +12,14 @@ const MediaBtn = () => {
     setActive(!isActive);
   };
 
-  // const classes = {
-  //   btn: true,
-  //   btnActive: true,
-  // };
-
   return (
     <div className={styles.mediaContainer}>
       {isActive ? <Heading /> : <MediaHandler />}
+      {/* <Heading />
+      <MediaHandler /> */}
       <div className={styles.hero}>
         <button
-          className={` ${isActive ? styles.btn : styles.btnActive}`}
+          className={isActive ? styles.btn : styles.btnActive}
           onClick={handleBtn}
         ></button>
       </div>

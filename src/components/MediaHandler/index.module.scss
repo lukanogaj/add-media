@@ -8,9 +8,22 @@
   border-radius: 40px;
   transition: all ease 0.5s;
 }
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 400px;
+  height: 80px;
 
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+}
 .icons {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   justify-content: center;
   overflow: hidden;
