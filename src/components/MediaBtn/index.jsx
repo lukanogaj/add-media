@@ -6,7 +6,6 @@ import Heading from '../Heading';
 
 const MediaBtn = () => {
   const [isActive, setActive] = useState('false');
-  // const [isOpen, setOpen] = useState('false');
 
   const handleBtn = () => {
     setActive(!isActive);
@@ -14,13 +13,12 @@ const MediaBtn = () => {
 
   return (
     <div className={styles.mediaContainer}>
-      {isActive ? <MediaHandler /> : <Heading />}
-      {/* <Heading />
-      <MediaHandler /> */}
+      {isActive ? <Heading /> : <MediaHandler />}
       <div className={styles.hero}>
         <button
-          className={`${styles.btn} ${isActive ? styles.btnActive : ''}`}
-          // className={isActive ? styles.btn : styles.btnActive}
+          className={`${styles.btn} ${
+            isActive ? styles.btn : styles.btnActive
+          }`}
           onClick={handleBtn}
         ></button>
       </div>
