@@ -3,7 +3,7 @@ import { PicturesIcon, MusicIcon, VideoIcon } from '../../images/Icons';
 
 const MediaHandler = () => {
   return (
-    <div className={`${styles.mediaHandler} ${styles.transform}`}>
+    <div className={styles.mediaHandler}>
       <div className={styles.icons}>
         <PicturesIcon />
       </div>

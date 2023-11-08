@@ -16,6 +16,10 @@
   background-color: #8a2be2;
   border-radius: 50%;
   margin-top: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
 
   .btn {
     display: flex;
