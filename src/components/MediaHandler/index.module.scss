@@ -6,20 +6,12 @@
   height: 80px;
   background-color: #fff;
   border-radius: 40px;
-  // transition-property: background-color;
-  // transition-duration: 0.5s;
-  // transition-timing-function: ease-in;
-  // transition-delay: 0.3s;
-  // transition: width 2s, height 4s;
-  transition: opacity 0.5s, margin-top 0.5s, margin-bottom 0.5s;
-  -webkit-transition: opacity 0.5s, margin-top 0.5s, margin-bottom 0.5s;
-}
+  transition: 1s;
+  transform: translateY(-1em);
 
-.mediaHandler:active {
-  width: 800px;
-  height: 300px;
-  transition: opacity 0.5s, margin-top 0.5s, margin-bottom 0.5s;
-  -webkit-transition: opacity 0.5s, margin-top 0.5s, margin-bottom 0.5s;
+  .mediaHandlerHidden {
+    visibility: hidden;
+  }
 }
 
 .icons {
@@ -29,16 +21,17 @@
   justify-content: center;
   overflow: hidden;
 
-  .icons:hover {
-    background-color: red;
-    transform: translateY(-10px);
-  }
-
   svg {
     padding: 10px;
     width: 50px;
     height: 50px;
   }
+  // .iconsHidden {
+  //   visibility: hidden;
+  // }
+}
+.iconsHidden {
+  visibility: hidden;
 }
 
 .icons:hover {

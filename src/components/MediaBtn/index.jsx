@@ -13,12 +13,11 @@ const MediaBtn = () => {
 
   return (
     <div className={styles.mediaContainer}>
-      {isActive ? <Heading /> : <MediaHandler />}
+      <Heading isActive={isActive} />
+      <MediaHandler isActive={isActive} />
       <div className={styles.hero}>
         <button
-          className={`${styles.btn} ${
-            isActive ? styles.btn : styles.btnActive
-          }`}
+          className={isActive ? styles.btn : styles.btnActive}
           onClick={handleBtn}
         ></button>
       </div>
