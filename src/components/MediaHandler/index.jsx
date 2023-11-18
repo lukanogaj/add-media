@@ -6,13 +6,13 @@ const MediaHandler = ({ isActive }) => {
     <div
       className={!isActive ? styles.mediaHandler : styles.mediaHandlerHidden}
     >
-      <div className={!isActive ? styles.icons : styles.iconsHidden}>
+      <div className={styles.icons}>
         <PicturesIcon />
       </div>
-      <div className={!isActive ? styles.icons : styles.iconsHidden}>
+      <div className={styles.icons}>
         <MusicIcon />
       </div>
-      <div className={!isActive ? styles.icons : styles.iconsHidden}>
+      <div className={styles.icons}>
         <VideoIcon />
       </div>
     </div>

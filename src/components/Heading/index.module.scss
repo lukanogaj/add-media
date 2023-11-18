@@ -1,6 +1,6 @@
 .heading {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   width: 400px;
@@ -9,11 +9,9 @@
   h2 {
     font-size: 3rem;
     color: #fff;
-    color: red;
   }
 }
 
 .headingHidden {
   visibility: hidden;
-  color: green;
 }
