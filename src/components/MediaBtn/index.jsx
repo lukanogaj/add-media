@@ -5,7 +5,7 @@ import MediaHandler from '../MediaHandler';
 import Heading from '../Heading';
 
 const MediaBtn = () => {
-  const [isActive, setActive] = useState('false');
+  const [isActive, setActive] = useState(true);
 
   const handleBtn = () => {
     setActive(!isActive);
@@ -15,6 +15,7 @@ const MediaBtn = () => {
     <div className={styles.mediaContainer}>
       <Heading isActive={isActive} />
       <MediaHandler isActive={isActive} />
+
       <div className={styles.hero}>
         <button
           className={isActive ? styles.btn : styles.btnActive}

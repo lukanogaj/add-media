@@ -4,11 +4,7 @@ import { PicturesIcon, MusicIcon, VideoIcon } from '../../images/Icons';
 const MediaHandler = ({ isActive }) => {
   return (
     <div
-      className={
-        !isActive
-          ? styles.mediaHandler
-          : styles.mediaHandlerUnactive && styles.mediaHandlerHidden
-      }
+      className={!isActive ? styles.mediaHandler : styles.mediaHandlerHidden}
     >
       <div className={styles.icons}>
         <PicturesIcon />

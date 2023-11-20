@@ -21,7 +21,9 @@
   }
 
   .mediaHandlerHidden {
-    display: none;
+    visibility: hidden;
+    // display: none;
+
     div {
       svg {
         display: none;
