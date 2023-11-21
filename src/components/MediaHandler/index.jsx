@@ -1,9 +1,9 @@
 import styles from './index.module.scss';
 import { PicturesIcon, MusicIcon, VideoIcon } from '../../images/Icons';
 
-const MediaHandler = () => {
+const MediaHandler = ({ isActive }) => {
   return (
-    <div className={styles.mediaHandler}>
+    <div className={isActive ? styles.mediaHandler : styles.mediaHandlerHidden}>
       <div className={styles.icons}>
         <PicturesIcon />
       </div>
