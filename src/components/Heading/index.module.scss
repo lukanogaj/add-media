@@ -1,4 +1,6 @@
 .heading {
+  position: absolute;
+  top: 9rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -6,8 +8,8 @@
   width: 400px;
   height: 80px;
   opacity: 1;
-  transition-delay: 500ms;
-  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-duration: 250ms;
 
   h2 {
     font-size: 3rem;
@@ -16,13 +18,15 @@
 }
 
 .headingHidden {
+  position: absolute;
+  top: 9rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   width: 400px;
   height: 80px;
-  transition-delay: 500ms;
-  transition-duration: 1s;
+  transition-delay: 250ms;
+  transition-duration: 250ms;
   opacity: 0;
 }
